@@ -19,6 +19,7 @@ body{margin:0px;padding:0px;color:#000;font-size:12px;font-family:verdana;backgr
 .product_image{float: left;width:150px;height:100px;}
 .product_description{ float: left;width:180px;}
 .product_price{float: left;margin-top: 10px;}
+.cart_button{float: left;width: 100%;}
 
 /*helper styles*/
 .fl{float:left;}
