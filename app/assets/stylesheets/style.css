@@ -14,7 +14,7 @@ body{margin:0px;padding:0px;color:#000;font-size:12px;font-family:verdana;backgr
 .rightnav{float: left;width:755px;background-color: #F5F5F1;height: auto;padding: 15px;}
 
 /*catalog page styles*/
-.catalog_products{float: left;width:350px;margin:15px 15px 0 0;display: inline;}
+.catalog_products{float: left;width:350px;margin:15px 15px 0 0;display: inline;height:160px;}
 .product_title{float: left;margin:5px 0;width:100%;}
 .product_image{float: left;width:150px;height:100px;}
 .product_description{ float: left;width:180px;}

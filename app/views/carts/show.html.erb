@@ -2,9 +2,18 @@
 
 <ul>
   <% @cart.line_items.each do |item| %>
-  <li><%= item.product.title %></li>
+  <li style="width:300px;">
+    <span style="float: left;margin-left: 5px;"><%= item.quantity %> &times;</span>
+    <span style="float: left;margin-left: 15px;"> <%= item.product.title %></span>
+    <span style="float:right;"><%= number_to_currency(item.total_price) %></span>
+  </li>
   <% end %>
 </ul>
-
-<%= link_to 'Edit', edit_cart_path(@cart) %> 
-<%= link_to 'Back', carts_path %>
+<div style="width: 300px;float:left;margin-top:5px;">
+  <span style="float: right;border-bottom: 1px solid #000;border-top:1px solid #000;">Total Price : <%= number_to_currency(@cart.total_price) %></span>
+</div>
+<div style="margin-top:60px">
+  <%= button_to 'Empty Cart', @cart, :method => :delete, :confirm => 'Are you sure ?' %>
+</div>
+ 
+<%= link_to 'Back', store_index_path %>

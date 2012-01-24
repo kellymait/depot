@@ -10,6 +10,8 @@ Depot::Application.routes.draw do
   get "home/catalog"
 
   resources :products
+  
+  resources :store
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
