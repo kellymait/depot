@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  
+</head>
+<body>
+  
+<div>
+  <% @cart.line_items.each do |item| %>  
+  <% if line_item == @current_item %>
+  <% else %>
+  <% end %>
+  <div>
+    <span><%= item.quantity %> &times;</span>
+    <span><%= item.product.title %></span>
+    <span><%= number_to_currency(item.total_price) %></span>
+  </div>
+  <% end %>
+</div>
+</body>
+</html>
